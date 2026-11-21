@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTBots — AI bots for your inbox and your games</title>
+  <meta name="description" content="TTBots is a free AI workspace. Connect Gmail so your bots can find, summarize and draft email for you, or describe a game and let a bot build it.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main"><span class="en">Skip to content</span><span class="zh">跳到正文</span></a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="logo.png" alt="" width="36" height="36">TTBots</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" href="#bots"><span class="en">Bots</span><span class="zh">机器人</span></a>
+        <a class="nav-link" href="#gmail"><span class="en">Gmail</span><span class="zh">Gmail 连接</span></a>
+        <a class="nav-link" href="#faq"><span class="en">FAQ</span><span class="zh">常见问题</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="切换到中文 / Switch to English">中文</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>
+            <span class="en">Bots that clear your inbox and build your games.</span>
+            <span class="zh">帮你处理邮件、帮你做游戏的 AI 机器人。</span>
+          </h1>
+          <p class="lede">
+            <span class="en">TTBots is a free AI workspace. Connect Gmail and your bots find, summarize and draft email for you. Describe a game and a bot designs, builds and playtests it.</span>
+            <span class="zh">TTBots 是一个免费的 AI 工作台。连接 Gmail 后，机器人帮你查找、总结和起草邮件；说出你想要的游戏，机器人帮你设计、制作和试玩。</span>
+          </p>
+          <div class="actions">
+            <!-- TODO: point this to your app's sign-in page when it is live -->
+            <a class="btn btn-gold" href="#gmail"><span class="en">Get started free</span><span class="zh">免费开始使用</span></a>
+            <a class="btn btn-line" href="#bots"><span class="en">See what bots do</span><span class="zh">看看机器人能做什么</span></a>
+          </div>
+          <p class="note">
+            <span class="en">Bots never send email without your OK.</span>
+            <span class="zh">没有你的确认，机器人不会发出任何邮件。</span>
+          </p>
+        </div>
+
+        <div class="demo" aria-label="Example conversation with the inbox bot">
+          <div class="demo-bar">
+            <strong><span class="en">Inbox bot</span><span class="zh">邮件机器人</span></strong>
+            <span class="status"><span class="en">Gmail connected</span><span class="zh">Gmail 已连接</span></span>
+          </div>
+          <div class="thread">
+            <div class="msg you">
+              <span class="en">Summarize today's unread mail and draft replies to anything urgent.</span>
+              <span class="zh">总结一下今天的未读邮件，紧急的帮我起草回复。</span>
+            </div>
+            <div class="msg bot">
+              <span class="who">TTBots</span>
+              <span class="en">8 unread. Two need you today:</span>
+              <span class="zh">共 8 封未读，有 2 封今天需要你处理：</span>
+              <ul class="mail-list">
+                <li>Alex Chen
+                  <span class="en">Wants playtest feedback on the new build by Friday</span>
+                  <span class="zh">希望周五前收到新版本的试玩反馈</span>
+                </li>
+                <li>Steam
+                  <span class="en">Your store page review is approved</span>
+                  <span class="zh">商店页面审核已通过</span>
+                </li>
+              </ul>
+              <span class="en">I drafted a reply to Alex. Send it?</span>
+              <span class="zh">我给 Alex 起草了一封回复，要发送吗？</span>
+              <div class="approve" aria-hidden="true">
+                <span class="send"><span class="en">Send</span><span class="zh">发送</span></span>
+                <span class="edit"><span class="en">Edit draft</span><span class="zh">修改草稿</span></span>
+              </div>
+            </div>
+            <div class="msg you">
+              <span class="en">Send it.</span>
+              <span class="zh">发吧。</span>
+            </div>
+            <div class="msg bot">
+              <span class="sent"><span class="en">Sent from your Gmail to Alex Chen.</span><span class="zh">已用你的 Gmail 发送给 Alex Chen。</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bots">
+      <div class="wrap">
+        <h2><span class="en">Two bots, one workspace.</span><span class="zh">两个机器人，一个工作台。</span></h2>
+        <p class="intro">
+          <span class="en">Talk to TTBots in plain language. Each bot uses only the tools it needs for the job you give it.</span>
+          <span class="zh">用平常说话的方式和 TTBots 交流。每个机器人只使用完成你交代的任务所需的工具。</span>
+        </p>
+        <div class="bots">
+          <div class="bot-block bot-inbox">
+            <h3><span class="en">Inbox bot</span><span class="zh">邮件机器人</span></h3>
+            <p>
+              <span class="en">Connect your Gmail account once, then ask for what you need.</span>
+              <span class="zh">连接一次 Gmail 账号，之后直接说你要做什么。</span>
+            </p>
+            <ul class="en">
+              <li>Search your mail by sender, topic or date</li>
+              <li>Summarize unread or long threads</li>
+              <li>Draft replies in your tone</li>
+              <li>Send email, only after you approve it</li>
+              <li>Apply labels and archive what you are done with</li>
+            </ul>
+            <ul class="zh">
+              <li>按发件人、主题或日期搜索邮件</li>
+              <li>总结未读邮件和很长的邮件往来</li>
+              <li>用你的语气起草回复</li>
+              <li>发送邮件，但必须先经过你确认</li>
+              <li>给邮件加标签，归档处理完的邮件</li>
+            </ul>
+          </div>
+          <div class="bot-block bot-game">
+            <h3><span class="en">Game bot</span><span class="zh">游戏机器人</span></h3>
+            <p>
+              <span class="en">Describe the game you want. The bot writes the design, makes the assets, builds it and plays it to check it works.</span>
+              <span class="zh">描述你想要的游戏，机器人会写策划、做素材、搭建游戏，再自己试玩确认能跑通。</span>
+            </p>
+            <ul class="en">
+              <li>Keep changing it through conversation</li>
+              <li>Share a link anyone can play in the browser</li>
+              <li>Everything you make belongs to you</li>
+            </ul>
+            <ul class="zh">
+              <li>通过对话不断修改</li>
+              <li>分享一个链接，别人在浏览器里就能玩</li>
+              <li>你做出来的东西完全归你所有</li>
+            </ul>
+          </div>
+        </div>
+        <p class="byok">
+          <span class="en">Bring your own AI model key if you prefer. Your key is used only to run your own requests.</span>
+          <span class="zh">你也可以使用自己的 AI 模型密钥，它只会用来处理你自己的请求。</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="gmail">
+      <div class="wrap">
+        <h2><span class="en">Connecting Gmail takes one click.</span><span class="zh">一键连接 Gmail。</span></h2>
+        <p class="intro">
+          <span class="en">You sign in on Google's own page. TTBots never sees your Google password.</span>
+          <span class="zh">你是在 Google 官方页面上登录授权的，TTBots 永远看不到你的 Google 密码。</span>
+        </p>
+        <div class="connect">
+          <ol class="steps">
+            <li>
+              <div>
+                <h3><span class="en">Click Connect Gmail</span><span class="zh">点击“连接 Gmail”</span></h3>
+                <p><span class="en">Find it in TTBots under Settings, Connections, or just ask a bot to connect your Gmail.</span><span class="zh">在 TTBots 的“设置 → 连接”里找到它，或者直接让机器人帮你连接 Gmail。</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3><span class="en">Approve on Google</span><span class="zh">在 Google 页面确认授权</span></h3>
+                <p><span class="en">Google shows exactly which permissions TTBots asks for. You can decline any time.</span><span class="zh">Google 会清楚列出 TTBots 申请的每一项权限，你随时可以拒绝。</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3><span class="en">Ask your bot</span><span class="zh">直接吩咐机器人</span></h3>
+                <p><span class="en">Your inbox bot can now search, summarize and draft. To stop, disconnect in Settings or remove TTBots from your Google Account.</span><span class="zh">现在邮件机器人就能帮你搜索、总结和起草邮件了。想停止的话，在设置里断开连接，或在你的 Google 账号里移除 TTBots。</span></p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="promises">
+            <h3><span class="en">What TTBots does with your Gmail</span><span class="zh">TTBots 如何对待你的 Gmail</span></h3>
+            <ul class="en">
+              <li>Reads email only to do what you ask</li>
+              <li>Waits for your approval before sending anything</li>
+              <li>Never sells your data or uses it for ads</li>
+              <li>Never uses your email to train AI models</li>
+              <li>Deletes your Gmail data when you disconnect</li>
+            </ul>
+            <ul class="zh">
+              <li>只在执行你的指令时读取邮件</li>
+              <li>发送任何邮件之前都会等你确认</li>
+              <li>绝不出售你的数据，也不用于广告</li>
+              <li>绝不用你的邮件训练 AI 模型</li>
+              <li>断开连接后删除你的 Gmail 数据</li>
+            </ul>
+            <p>
+              <span class="en">Full details are in our <a href="privacy.html">Privacy Policy</a>.</span>
+              <span class="zh">完整说明请见<a href="privacy.html">隐私政策</a>。</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <h2><span class="en">Questions</span><span class="zh">常见问题</span></h2>
+        <div class="faq">
+          <details>
+            <summary><span class="en">Is TTBots free?</span><span class="zh">TTBots 免费吗？</span></summary>
+            <p><span class="en">Yes, TTBots is free while it is in beta. If you use your own AI model key, your model provider may charge you for that usage.</span><span class="zh">是的，测试期间完全免费。如果你使用自己的 AI 模型密钥，模型服务商可能会按用量向你收费。</span></p>
+          </details>
+          <details>
+            <summary><span class="en">Will a bot send email on its own?</span><span class="zh">机器人会自己发邮件吗？</span></summary>
+            <p><span class="en">No. A bot can prepare a draft, but sending always waits for you to approve it.</span><span class="zh">不会。机器人可以准备草稿，但发送前一定会等你确认。</span></p>
+          </details>
+          <details>
+            <summary><span class="en">How do I disconnect Gmail?</span><span class="zh">怎么断开 Gmail？</span></summary>
+            <p><span class="en">Disconnect in TTBots under Settings, Connections, or remove TTBots at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Either way, TTBots loses access right away.</span><span class="zh">在 TTBots 的“设置 → 连接”里断开，或在 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> 移除 TTBots。两种方式都会立即取消访问权限。</span></p>
+          </details>
+          <details>
+            <summary><span class="en">Is my email used to train AI?</span><span class="zh">我的邮件会被拿去训练 AI 吗？</span></summary>
+            <p><span class="en">No. Your email is used only to answer your requests, and is never used to train any AI model.</span><span class="zh">不会。你的邮件只用于回应你的请求，绝不会用来训练任何 AI 模型。</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 TTBots</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html"><span class="en">Privacy Policy</span><span class="zh">隐私政策</span></a>
+        <a href="terms.html"><span class="en">Terms of Service</span><span class="zh">服务条款</span></a>
+        <a href="mailto:chaojijunquan@gmail.com"><span class="en">Contact</span><span class="zh">联系我们</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      function apply(lang) {
+        root.dataset.lang = lang;
+        root.lang = lang === "zh" ? "zh-CN" : "en";
+        var btn = document.querySelector("[data-lang-toggle]");
+        if (btn) btn.textContent = lang === "zh" ? "EN" : "中文";
+      }
+      var saved = null;
+      try { saved = localStorage.getItem("ttbots-lang"); } catch (e) {}
+      var browserZh = (navigator.language || "").toLowerCase().indexOf("zh") === 0;
+      apply(saved || (browserZh ? "zh" : "en"));
+      document.querySelector("[data-lang-toggle]").addEventListener("click", function () {
+        var next = root.dataset.lang === "zh" ? "en" : "zh";
+        apply(next);
+        try { localStorage.setItem("ttbots-lang", next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
